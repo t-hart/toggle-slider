@@ -1,0 +1,46 @@
+$tack-diameter: 1em;
+$slider-width: $tack-diameter * 2.1;
+$slider-padding: .05em;
+$active-color: #bada55;
+$inactive-color: maroon;
+$transition-time: .4s;
+$border-radius: 90px;
+
+.toggle-checkbox {
+  position: absolute;
+}
+
+.slider {
+  padding: $slider-padding;
+  cursor: pointer;
+  background-color: $inactive-color;
+  width: $slider-width;
+  height: $tack-diameter;
+  position: relative;
+  border-radius: $border-radius;
+  display: block;
+  transition: $transition-time;
+
+  &:after {
+    content: '';
+    height: $tack-diameter;
+    width: $tack-diameter;
+    background-color: #fff;
+    border-radius: $border-radius;
+    transition: $transition-time;
+    position: absolute;
+    left: $slider-padding;
+  }
+
+  &:active:after {
+    width: $tack-diameter * 1.5;
+  }
+}
+
+input:checked + label {
+  background: $active-color;
+  &:after {
+    left: $slider-width + $slider-padding;
+    transform: translateX(-100%);
+  }
+}

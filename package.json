@@ -1,0 +1,15 @@
+{
+  "name": "toggle",
+  "version": "0.1.0",
+  "description": "A html toggle slider",
+  "main": "src/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Thomas Hartmann",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel-bundler": "^1.11.0",
+    "sass": "^1.17.0"
+  }
+}
