@@ -1,0 +1,4 @@
+* Toggle slider
+  A simple toggle slider.
+
+  Made mostly for fun and out of curiosity.
