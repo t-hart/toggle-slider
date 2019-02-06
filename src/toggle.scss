@@ -1,6 +1,10 @@
-$tack-diameter: 1em;
-$slider-width: $tack-diameter * 2.1;
+$tack-width: 1em;
+$tack-height: $tack-width;
+$tack-active-width: $tack-width * 1.5;
+$slider-width: $tack-width * 2.1;
+$slider-height: $tack-height;
 $slider-padding: .05em;
+$tack-color: #fff;
 $active-color: #bada55;
 $inactive-color: maroon;
 $transition-time: .4s;
@@ -16,7 +20,7 @@ $border-radius: 90px;
   cursor: pointer;
   background-color: $inactive-color;
   width: $slider-width;
-  height: $tack-diameter;
+  height: $slider-height;
   position: relative;
   border-radius: $border-radius;
   display: block;
@@ -24,9 +28,9 @@ $border-radius: 90px;
 
   &:after {
     content: '';
-    height: $tack-diameter;
-    width: $tack-diameter;
-    background-color: #fff;
+    height: $tack-height;
+    width: $tack-width;
+    background-color: $tack-color;
     border-radius: $border-radius;
     transition: $transition-time;
     position: absolute;
@@ -34,7 +38,7 @@ $border-radius: 90px;
   }
 
   &:active:after {
-    width: $tack-diameter * 1.5;
+    width: $tack-active-width;
   }
 }
 
