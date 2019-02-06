@@ -4,11 +4,11 @@
   Made mostly for fun and out of curiosity.
 ** Running the project
    Install dependencies:
-   ```sh
+   #+BEGIN_SRC sh
    npm install
-   ```
+   #+END_SRC
 
    Start the dev server:
-   ```sh
+   #+BEGIN_SRC sh
    npm run dev
-   ```
+   #+END_SRC
