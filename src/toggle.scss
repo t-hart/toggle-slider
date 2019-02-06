@@ -11,6 +11,7 @@ $border-radius: 90px;
 }
 
 .slider {
+  box-sizing: content-box;
   padding: $slider-padding;
   cursor: pointer;
   background-color: $inactive-color;
