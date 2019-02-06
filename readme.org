@@ -2,3 +2,13 @@
   A simple toggle slider.
 
   Made mostly for fun and out of curiosity.
+** Running the project
+   Install dependencies:
+   ```sh
+   npm install
+   ```
+
+   Start the dev server:
+   ```sh
+   npm run dev
+   ```
